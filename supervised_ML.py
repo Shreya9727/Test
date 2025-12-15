@@ -52,7 +52,7 @@ models.append(('GNB', GaussianNB()))
 models.append(('RF', RandomForestClassifier()))
 
 #Split into train and validation sets
-train, test = train_test_split(file_t, test_size = 0.2, stratify = file_t.Cluster, random_state = 42)
+train, test = train_test_split(file_t, test_size = 0.2, stratify = file_t.Class, random_state = 42)
 #train.to_csv('Train_set.csv', index=True)
 #test.to_csv('Test_set.csv', index=True)
 
@@ -98,5 +98,6 @@ print (len(feature_scores))
 feature_scores.to_csv('kmers_importance_scores_021324.csv')
 
 print (eta())
+
 
 
