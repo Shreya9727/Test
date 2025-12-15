@@ -1,1 +1,2 @@
-# Test
+# Simple supervised machine learning model using Python3
+This repository consists of scripts to run a clean dataset that comprises of columns with features, rows with datapoint headers and cells with datapoints. This script allows training the dataset with multiple supervised machine learning algorithms. The steps included in the script are dividing the dataset into train and test set, running thetrain set on different algorithms and calculating the accuracy measures. This script can be used during the algorithm selection stage of building a model for your dataset.
